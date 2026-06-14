@@ -82,6 +82,7 @@ Default section order:
 - Before building custom MCP/server work, search GitHub open-source MCPs, Codex plugins, and skills for existing capabilities. Prefer wiring or installing existing tools over building new integrations.
 - Treat Postiz and similar products as competitor/gap references only, not implementation blueprints.
 - Use the product name `bapXauto` exactly; casing is intentional and case-sensitive.
+- Use `src/assets/bapx-logo.png` as the official logo asset in the frontend unless the user provides a newer official logo.
 - Build `bapXauto` as a ChatGPT/Codex app for agencies and solo businesses managing social media automation, websites, client operations, reporting, billing, insights, recommendations, and approval-gated communications.
 - Keep work issue- and PR-driven: research or audit findings become GitHub issues, implementation happens on scoped branches, and completed work lands through pull requests with verification evidence.
 - Maintain `README.md` as the professional project state surface. Update it when product scope, architecture direction, verification status, setup commands, or next priorities change; link to the GitHub Issues page instead of duplicating issue lists.

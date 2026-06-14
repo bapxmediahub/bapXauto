@@ -13,6 +13,7 @@ Owns the React frontend for the `bapXauto` command center.
 
 - Build a usable internal operations UI, not a marketing landing page.
 - Present `bapXauto` as a ChatGPT/Codex app command center for agencies and solo businesses, not only a standalone dashboard.
+- Use `src/assets/bapx-logo.png` as the official frontend logo asset.
 - Model the product around existing Codex plugins: Gmail, Google Drive/Sheets, Google Calendar, Data Analytics, Creative Production, and Product Design.
 - Treat `bapx-automation` as a future MCP/API layer only; do not claim live backend capability until it exists and no suitable GitHub open-source MCP/plugin/skill covers the gap.
 - Keep report delivery, billing, recommendations, Meta actions, and email sending human-approval-gated.

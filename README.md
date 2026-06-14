@@ -12,6 +12,7 @@ The product name is case-sensitive: use `bapXauto` exactly.
 - App direction: ChatGPT Apps SDK `interactive-decoupled` app with a React widget and small MCP tools
 - Backend state: no live custom MCP server yet
 - Safety state: external actions stay human-approval-gated
+- Official logo asset: `src/assets/bapx-logo.png`
 
 The current UI is a Vite + React dashboard that models:
 

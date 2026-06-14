@@ -24,6 +24,7 @@ import {
   Users,
 } from 'lucide-react';
 import './styles.css';
+import bapxLogo from './assets/bapx-logo.png';
 
 const clients = [
   {
@@ -197,8 +198,8 @@ function App() {
     <main className="app-shell">
       <aside className="sidebar">
         <div className="brand">
-          <div className="brand-mark">bX</div>
-          <div>
+          <img className="brand-logo" src={bapxLogo} alt="bapXauto official logo" />
+          <div className="brand-copy">
             <strong>bapXauto</strong>
             <span>Codex command ops</span>
           </div>
