@@ -21,6 +21,7 @@ The current UI is a Vite + React dashboard that models:
 - Drive/Sheets, Calendar, Data Analytics, Creative Production, and Product Design lanes
 - approval-gated Gmail draft action
 - reporting, billing, insights, recommendations, audit trail, and future MCP command areas
+- MVP journey cards with golden prompts and plugin/MCP routing for reporting, billing, social insights, website audits, and client communication
 
 ## Operating Rules
 
@@ -82,6 +83,7 @@ Latest subagent browser audit:
 - Follow-up issues created: #8 and #9
 - Issue #8 responsive/accessibility fixes: implemented by worker subagent and build-verified
 - Issue #9 nav/action honesty fixes: implemented locally with view summaries and visible prototype-safe status feedback
+- Issue #13 MVP journey cards: added to the UI and mapped to existing plugin/MCP lanes
 
 ## Architecture Direction
 
@@ -108,7 +110,7 @@ Evaluate GitHub open-source options before custom work:
 
 ## Next CTO Priorities
 
-1. Create a draft PR for the UI shell with build/browser proof.
+1. Keep PR #11 current with each verified product slice.
 2. Use CodeRabbit review if CLI/auth is available.
 3. Continue architecture work from issues #3 through #7 before creating custom MCP code.
 4. Evaluate OSS MCP candidates in issue #6 before creating `bapx-automation`.

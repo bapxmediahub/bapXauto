@@ -22,6 +22,7 @@ import {
   Sparkles,
   TriangleAlert,
   Users,
+  WandSparkles,
 } from 'lucide-react';
 import './styles.css';
 import bapxLogo from './assets/bapx-logo.png';
@@ -131,6 +132,39 @@ const recommendations = [
     evidence: 'Gmail shows bill and monthly report names, but current mocked run lacks source folder.',
     owner: 'Drive + Data Analytics',
     risk: 'Incomplete evidence trail',
+  },
+];
+
+const journeys = [
+  {
+    title: 'Monthly client reporting',
+    prompt: 'Prepare this month\'s client report packet, verify evidence, and draft the approval checklist.',
+    lanes: 'Gmail + Drive/Sheets + Data Analytics',
+    approval: 'Draft only until owner approves attachments and narrative.',
+  },
+  {
+    title: 'Billing and invoice status',
+    prompt: 'Match this client\'s invoice, report packet, billing status, and any send blockers.',
+    lanes: 'Gmail + Drive/Sheets + future billing MCP',
+    approval: 'No invoice sending or payment status changes without review.',
+  },
+  {
+    title: 'Social and Meta insights',
+    prompt: 'Summarize social performance and recommend the next campaign angle with evidence.',
+    lanes: 'Data Analytics + Creative Production + Meta MCP research',
+    approval: 'Recommendations only; ad spend or publishing stays blocked.',
+  },
+  {
+    title: 'Website audit workflow',
+    prompt: 'Audit the client website for priority fixes and convert findings into tasks.',
+    lanes: 'Product Design + Browser QA + Lighthouse/WordPress MCP research',
+    approval: 'Create tasks only; no website edits until explicitly approved.',
+  },
+  {
+    title: 'Client communication',
+    prompt: 'Draft a client-ready update explaining report status, invoice status, and next actions.',
+    lanes: 'Gmail + Calendar + Drive evidence',
+    approval: 'Gmail drafts only; sending remains a human action.',
   },
 ];
 
@@ -401,6 +435,29 @@ function App() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="panel journey-panel">
+          <div className="panel-head">
+            <div>
+              <h2>MVP journeys and golden prompts</h2>
+              <p>Operator-ready starting points for ChatGPT and Codex agents, mapped to existing lanes before custom MCP work.</p>
+            </div>
+            <span className="chip info">Issue #13</span>
+          </div>
+          <div className="journey-grid">
+            {journeys.map((journey) => (
+              <article className="journey-card" key={journey.title}>
+                <WandSparkles size={18} />
+                <div>
+                  <strong>{journey.title}</strong>
+                  <span>{journey.prompt}</span>
+                  <small>{journey.lanes}</small>
+                  <b>Approval gate: {journey.approval}</b>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 

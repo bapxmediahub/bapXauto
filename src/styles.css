@@ -501,7 +501,8 @@ button:disabled {
 
 .plugin-grid,
 .recommendation-list,
-.command-list {
+.command-list,
+.journey-grid {
   display: grid;
   gap: 10px;
 }
@@ -542,6 +543,58 @@ button:disabled {
   color: #8b5a00;
   font-size: 12px;
   font-weight: 750;
+}
+
+.journey-panel {
+  margin-top: 14px;
+}
+
+.journey-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.journey-card {
+  display: flex;
+  gap: 11px;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #e1e8ee;
+  border-radius: 7px;
+  background: #fbfcfe;
+}
+
+.journey-card svg {
+  flex: 0 0 auto;
+  color: #0e6679;
+}
+
+.journey-card strong,
+.journey-card span,
+.journey-card small,
+.journey-card b {
+  display: block;
+}
+
+.journey-card span {
+  margin-top: 5px;
+  color: #344454;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.journey-card small {
+  margin-top: 8px;
+  color: #0e6679;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.journey-card b {
+  margin-top: 8px;
+  color: #8b5a00;
+  font-size: 11px;
+  line-height: 1.35;
 }
 
 .command-item {
@@ -591,6 +644,10 @@ button:disabled {
   }
 
   .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journey-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -688,7 +745,8 @@ button:disabled {
   }
 
   .metric-grid,
-  .plugin-grid {
+  .plugin-grid,
+  .journey-grid {
     grid-template-columns: 1fr;
   }
 
